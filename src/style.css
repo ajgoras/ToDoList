@@ -10,6 +10,7 @@
     gap: 10px;
 }
 .statusCircle {
+    position: absolute;
     height: 25px;
     width: 25px;
     background-color: white;
@@ -20,6 +21,7 @@
 }
 
 .taskDescription{
+    margin-left: 35px;
     color: #404040;
 }
 
@@ -32,5 +34,9 @@
 .inputTask{
     border: none;
     height: 4vh;
-    width: max-content;
+    width: 90%;
+}
+
+.inputTask:focus{
+    outline: none;
 }
