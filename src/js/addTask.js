@@ -12,7 +12,7 @@ function addTask() {
         })
     }
     else {
-        document.querySelector('.inputTask').focus();
+        document.querySelector('.inputTask').remove();
     }
 }
 
