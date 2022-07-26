@@ -1,0 +1,36 @@
+#taskList{
+    overflow: auto;
+    padding-bottom: 50vh;
+}
+
+.taskInside {
+    margin: 15px 10px 15px 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.statusCircle {
+    height: 25px;
+    width: 25px;
+    background-color: white;
+    border: 2px solid;
+    border-color: #4a4a4a;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.taskDescription{
+    color: #404040;
+}
+
+.line{
+    width: 95%;
+    border: 1px solid lightgray;
+    background-color: lightgray;
+}
+
+.inputTask{
+    border: none;
+    height: 4vh;
+    width: max-content;
+}
