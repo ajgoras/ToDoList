@@ -21,6 +21,13 @@ function render() {
         statusCircle.id = 'statusCircle' + element.id;
         statusCircle.classList.add('statusCircle');
         taskInside.appendChild(statusCircle);
+        statusCircle.addEventListener('click', () => {
+            changeStatus(element.id-1);
+        })        
+        let statusCircleInterior = document.createElement('div');
+        statusCircleInterior.id = 'statusCircleInterior' + element.id;
+        statusCircleInterior.classList.add('statusCircleInterior');
+        statusCircle.appendChild(statusCircleInterior);
 
         let taskDescription = document.createElement('span');
         taskDescription.id = 'taskDescription' + element.id;
@@ -31,6 +38,15 @@ function render() {
         let line = document.createElement('hr');
         line.classList.add('line');
         task.appendChild(line);
+
+        if (taskList[element.id - 1].isDone == true) {
+            let selector = '#taskDescription' + element.id;
+            let circleSelector = '#statusCircle' + element.id;
+            let circleInteriorSelector = '#statusCircleInterior' + element.id;
+            document.querySelector(selector).classList.add('done')
+            document.querySelector(circleSelector).classList.add('done')
+            document.querySelector(circleInteriorSelector).classList.add('done');
+        }
     });
 }
 render();

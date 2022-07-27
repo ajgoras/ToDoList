@@ -20,9 +20,29 @@
     display: inline-block;
 }
 
+.statusCircle.done{
+    border-color: gray;
+}
+
+.statusCircleInterior{
+    border-radius: 50%;
+    margin: 3px;
+    height: 19px;
+    width: 19px;
+}
+
+.statusCircleInterior.done{
+    background-color: lightgray;
+}
+
 .taskDescription{
     margin-left: 35px;
     color: #404040;
+}
+
+.taskDescription.done{
+    text-decoration: line-through;
+    color: gray;
 }
 
 .line{

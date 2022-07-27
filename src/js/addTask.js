@@ -2,7 +2,7 @@ function addTask() {
     if (!htmlTaskList.lastChild.classList.contains('inputTask')) {
         let inputTask = document.createElement('input')
         inputTask.classList.add('inputTask');
-        inputTask.placeholder = 'newTask';
+        inputTask.placeholder = 'Enter a new task';
         htmlTaskList.appendChild(inputTask);
         inputTask.focus();
         inputTask.addEventListener('keyup', ({ key }) => {
