@@ -6,6 +6,5 @@ getFromServer().then(({ tasks }) => {
     tasks.forEach((tasks) => {
         taskList.push(tasks);
     })
-    taskCount = taskList.length;
     render();
 })

@@ -60,3 +60,7 @@
 .inputTask:focus{
     outline: none;
 }
+
+#hintText{
+    pointer-events: none;
+}
