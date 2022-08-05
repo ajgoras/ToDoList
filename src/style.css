@@ -1,3 +1,19 @@
+*{
+    font-family: Helvetica, sans-serif, Arial;
+}
+
+h1,h2{
+    color: #b562e6;
+    margin-left: 15px;
+    pointer-events: none;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 #taskList{
     overflow: auto;
     padding-bottom: 50vh;
@@ -32,10 +48,11 @@
 }
 
 .statusCircleInterior.done{
-    background-color: lightgray;
+    background-color: #876997;
 }
 
 .taskDescription{
+    font-size: 16px;
     margin-left: 35px;
     color: #404040;
 }
@@ -62,5 +79,6 @@
 }
 
 #hintText{
+
     pointer-events: none;
 }

@@ -49,6 +49,7 @@ function render() {
         }
     });
     let hintText = document.getElementById('hintText');
+    let taskCountHeader = document.getElementById('taskCount');
     if (taskList.length>0 && htmlTaskList.firstChild==hintText) {
         htmlTaskList.removeChild(hintText);
     }
@@ -58,4 +59,5 @@ function render() {
         hintText.innerHTML = 'Click to add your first task :)';
         htmlTaskList.appendChild(hintText);
     }
+    taskCountHeader.innerHTML = taskList.length;
 }
