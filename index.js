@@ -5,7 +5,15 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-let tasks = [];
+let tasks = [{ id: 1, description: 'Your First Task :)', isDone: false }];
+
+function refreshId() {
+    newId = 1;
+    tasks.forEach(element => {
+        element.id = newId;
+        newId++;
+    });
+}
 
 app.get('/', (req, res) => {
     res.send('Server is working!');
@@ -13,12 +21,25 @@ app.get('/', (req, res) => {
 
 app.post('/todolist', (req, res) => {
     tasks = req.body;
+    tasks.forEach((element, index) => {
+        if (element.isDone) {
+            tasks.splice(index, 1);
+        }
+    })
+    refreshId();
     console.log(tasks);
     res.status(200).end();
 })
 
 app.get('/todolist', (req, res) => {
+    tasks.forEach((element, index) => {
+        if (element.isDone) {
+            tasks.splice(index, 1);
+        }
+    })
+    refreshId();
     res.json({ tasks });
+    console.log(tasks);
 })
 
 app.listen(8888, () => {

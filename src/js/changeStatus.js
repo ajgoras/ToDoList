@@ -8,6 +8,7 @@ function changeStatus(item) {
         document.querySelector(selector).classList.add('done')
         document.querySelector(circleSelector).classList.add('done')
         document.querySelector(circleInteriorSelector).classList.add('done');
+        sendToServer(taskList);
     }
     else {
         taskList[item].isDone = false;
