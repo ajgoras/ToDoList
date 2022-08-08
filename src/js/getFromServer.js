@@ -8,3 +8,8 @@ getFromServer().then(({ tasks }) => {
     })
     render();
 })
+
+let hintText = document.createElement('span');
+hintText.id = 'hintText';
+hintText.innerHTML = 'Click to add your first task :)';
+htmlTaskList.appendChild(hintText);

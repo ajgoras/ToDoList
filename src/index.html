@@ -8,12 +8,12 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
+    <header class="revealtime">
         <h1 class="purple">ToDo List</h1>
         <h2 class="purple" id="taskCount"></h5>
     </header>
-    <div id="taskList"></div>
-    <footer>
+    <div id="taskList" class="revealtime2"></div>
+    <footer class="revealtime3">
         <div id="footerHeader">
             <button id="colorPickerButton"><span>Color Picker</span></button>
         </div>
@@ -24,7 +24,9 @@
             <div id="orangeCircle" class="colorCircle"></div>
         </div>
     </footer>
+    <script src="js/reveal.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/getFromServer.js"></script>
     <script src="js/render.js"></script>
     <script src="js/colorPicker.js"></script>
     <script src="js/addTask.js"></script>
@@ -32,6 +34,5 @@
     <script src="js/taskEvent.js"></script>
     <script src="js/changeStatus.js"></script>
     <script src="js/sendToServer.js"></script>
-    <script src="js/getFromServer.js"></script>
 </body>
 </html>

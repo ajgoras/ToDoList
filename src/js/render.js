@@ -53,11 +53,5 @@ function render() {
     if (taskList.length>0 && htmlTaskList.firstChild==hintText) {
         htmlTaskList.removeChild(hintText);
     }
-    else if(taskList.length==0){
-        let hintText = document.createElement('span');
-        hintText.id = 'hintText';
-        hintText.innerHTML = 'Click to add your first task :)';
-        htmlTaskList.appendChild(hintText);
-    }
     taskCountHeader.innerHTML = taskList.length;
 }
