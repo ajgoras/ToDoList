@@ -57,6 +57,13 @@ header{
     color: #404040;
 }
 
+.descriptionInput{
+    font-size: 16px;
+    margin-left: 35px;
+    color: #404040;
+    border: none;
+}
+
 .taskDescription.done{
     text-decoration: line-through;
     color: gray;
