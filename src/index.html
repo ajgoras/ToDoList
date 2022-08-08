@@ -9,12 +9,24 @@
 </head>
 <body>
     <header>
-        <h1>ToDo List</h1>
-        <h2 id="taskCount"></h5>
+        <h1 class="purple">ToDo List</h1>
+        <h2 class="purple" id="taskCount"></h5>
     </header>
     <div id="taskList"></div>
+    <footer>
+        <div id="footerHeader">
+            <button id="colorPickerButton"><span>Color Picker</span></button>
+        </div>
+        <div id="colors" class="displayNone">
+            <div id="purpleCircle" class="colorCircle active"></div>
+            <div id="blueCircle" class="colorCircle"></div>
+            <div id="greenCircle" class="colorCircle"></div>
+            <div id="orangeCircle" class="colorCircle"></div>
+        </div>
+    </footer>
     <script src="js/script.js"></script>
     <script src="js/render.js"></script>
+    <script src="js/colorPicker.js"></script>
     <script src="js/addTask.js"></script>
     <script src="js/editTask.js"></script>
     <script src="js/taskEvent.js"></script>

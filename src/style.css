@@ -1,11 +1,30 @@
+:root{
+    --purple: #b562e6;
+    --blue: #5b99e1;
+    --green: #55bd5e;
+    --orange: #e99535;
+    --purpleDark: #876997;
+    --blueDark: #326198;
+    --greenDark: #2d7834;
+    --orangeDark: #955e1f;
+    --purpleLight: #c9a8dc;
+    --blueLight: #98b5d6;
+    --greenLight: #8fb792;
+    --orangeLight: #e2ccb2;
+    --doneLight: #c9a8dc;
+    --done: #876997;
+}
+
 *{
     font-family: Helvetica, sans-serif, Arial;
 }
 
 h1,h2{
-    color: #b562e6;
     margin-left: 15px;
     pointer-events: none;
+}
+.transitionColor{
+    transition: color 0.25s;
 }
 
 header{
@@ -16,7 +35,7 @@ header{
 
 #taskList{
     overflow: auto;
-    padding-bottom: 50vh;
+    padding-bottom: 65vh;
 }
 
 .taskInside {
@@ -41,6 +60,7 @@ header{
 }
 
 .statusCircleInterior{
+    transition: background-color 0.25s;
     border-radius: 50%;
     margin: 3px;
     height: 19px;
@@ -48,7 +68,7 @@ header{
 }
 
 .statusCircleInterior.done{
-    background-color: #876997;
+    background-color: var(--done);
 }
 
 .taskDescription{
@@ -71,8 +91,8 @@ header{
 
 .line{
     width: 95%;
-    border: 1px solid lightgray;
-    background-color: lightgray;
+    border: 1px solid rgb(235, 235, 235);
+    background-color: rgb(235, 235, 235);
 }
 
 .inputTask{
@@ -86,6 +106,118 @@ header{
 }
 
 #hintText{
-
     pointer-events: none;
+}
+
+footer{
+    margin-bottom: 50px;
+}
+
+#footerHeader, #colors{
+    display: flex;
+    justify-content: center;
+}
+
+.purple{
+    color: var(--purple);
+}
+.blue{
+    color: var(--blue);
+}
+.green{
+    color: var(--green);
+}
+.orange{
+    color: var(--orange);
+}
+
+#colorPickerButton{
+    height: 30px;
+    width: 100px;
+    background-color: var(--doneLight);
+    border: none;
+    border-radius: 500px;
+    transition: background-color 0.25s, color 0.25s;
+}
+#colorPickerButton:hover{
+    background-color: var(--done);
+    color: white;
+    cursor: pointer;
+}
+
+.colorCircle {
+    padding: 2px;
+    margin: 5px 6px 5px 6px;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    transition: width 0.25s, height 0.25s;
+}
+.colorCircle:hover{
+    cursor: pointer;
+    margin: 3px 6px 3px 6px;
+    height: 35px;
+    width: 35px;
+}
+.active {
+    border: 3px solid var(--done);
+}
+
+#purpleCircle{
+    background-color: var(--purple);
+}
+#blueCircle{
+    background-color: var(--blue);
+}
+#greenCircle{
+    background-color: var(--green);
+}
+#orangeCircle{
+    background-color: var(--orange);
+}
+
+.displayNone{
+    display: none !important;
+}
+
+.scale-up-top {
+	-webkit-animation: scale-up-top 0.25s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: scale-up-top 0.25s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.scale-up-top-reverse {
+	-webkit-animation: scale-up-top 0.25s cubic-bezier(0.250, 0.460, 0.450, 0.940) reverse both;
+	        animation: scale-up-top 0.25s cubic-bezier(0.250, 0.460, 0.450, 0.940) reverse both;
+}
+
+@-webkit-keyframes scale-up-top {
+    0% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+        -webkit-transform-origin: 50% 0%;
+        transform-origin: 50% 0%;
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transform-origin: 50% 0%;
+        transform-origin: 50% 0%;
+    }
+}
+
+@keyframes scale-up-top {
+    0% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+        -webkit-transform-origin: 50% 0%;
+        transform-origin: 50% 0%;
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transform-origin: 50% 0%;
+        transform-origin: 50% 0%;
+    }
 }
