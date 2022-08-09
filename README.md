@@ -15,15 +15,19 @@ _To Do List inspired by Apple Reminders App with node server for storing tasks_
 - 🚀 Send/get tasks to/from server
 
 ## Live Link:
-[ToDoList live link](https://ajgoras.github.io/FlutterCalculator/)
+[ToDoList live link](https://todolistnode.netlify.app/)
 _You have to wait a few seconds for the server start and load default task_
 
 ## Used packages:
 
 [node.js](https://nodejs.org)
+
 [cors](https://expressjs.com/en/resources/middleware/cors.html)
+
 [express](https://expressjs.com)
+
 [nodemon](https://www.npmjs.com/package/nodemon) (optionally)
+
 
 ## Installation
 _If you want to run server locally_
