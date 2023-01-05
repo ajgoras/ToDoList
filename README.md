@@ -20,8 +20,6 @@ _You have to wait a few seconds for the server start and load default task_
 
 ## Used packages:
 
-[node.js](https://nodejs.org)
-
 [cors](https://expressjs.com/en/resources/middleware/cors.html)
 
 [express](https://expressjs.com)
