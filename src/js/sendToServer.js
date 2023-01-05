@@ -1,5 +1,5 @@
 function sendToServer(task) {
-    fetch("https://todolistbackend-78we.onrender.com/todolist", {
+    fetch("http://127.0.0.1:8888/todolist", {
         method: "POST",
         body: JSON.stringify(task),
         headers: {
