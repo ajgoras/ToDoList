@@ -20,9 +20,9 @@ _You have to wait a few seconds for the server start and load default task_
 
 ## Used packages:
 
-[cors](https://expressjs.com/en/resources/middleware/cors.html)
+[cors](https://www.npmjs.com/package/cors)
 
-[express](https://expressjs.com)
+[express](https://www.npmjs.com/package/express)
 
 [nodemon](https://www.npmjs.com/package/nodemon) (optionally)
 
