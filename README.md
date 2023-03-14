@@ -30,7 +30,6 @@ _You have to wait a few seconds for the server start and load default task_
 ## Installation
 _If you want to run server locally_
 - Clone or download repository
-- Download and install node.js (if you don't have)
 - Install necessary dependencies ```npm install ```
 - Run server 
 ``` node index.js ```
